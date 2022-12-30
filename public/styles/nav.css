@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4056a1;
+  font-size: 36px;
+  color : #FFFFFF;
+  height : 120px;
+  padding-left: 1.5em;
+  padding-right : 1.5em;
+  width: 100%;
+  position: fixed;
+}
+.logo {
+  font-family: 'Bungee';
+  align-self: baseline;
+}
+.heading {
+  font-size: 24px
+}
+i {
+  vertical-align: center;
+  font-size: 24px
+}
