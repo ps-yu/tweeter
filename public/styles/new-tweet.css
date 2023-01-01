@@ -1,0 +1,31 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+button {
+  display: flex;
+  justify-content: space-between;
+  background-color: #008CBA;
+  border: 3px solid #545149;
+  color: white;
+  margin: 4px 2px;
+  padding: 10px 25px;
+}
+output {
+  justify-self: right;
+}
+textarea{
+  background-color: #f2f3fa;
+  font-weight: bold;
+  height: 48px;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 4px solid #999999;
+}
+
+article{
+  display: flex;
+
+}
