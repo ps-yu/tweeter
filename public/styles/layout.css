@@ -18,20 +18,39 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- *  {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
- }
-
 main{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90%;
+  margin: 1em auto;
+}
+
+.tweets-container{
+  border: 3px solid #524e4e;
+  color: #524e4e;
+  margin-top : 50px ;
+  margin: 1.5em auto;
+}
+.tweets-container header{
+  margin-top: 80px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border: none;
+  border-bottom: 4px solid #524e4e;
+}
+.tweets-container footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-size: 16px;
 }

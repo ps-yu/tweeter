@@ -1,6 +1,11 @@
-form {
+.submit-counter {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Bungee', cursive;
+
+}
+form {
   width: 900px;
 }
 button {
@@ -12,9 +17,6 @@ button {
   margin: 4px 2px;
   padding: 10px 25px;
 }
-output {
-  justify-self: right;
-}
 textarea{
   background-color: #f2f3fa;
   font-weight: bold;
@@ -25,7 +27,3 @@ textarea{
   border-bottom: 4px solid #999999;
 }
 
-article{
-  display: flex;
-
-}
