@@ -15,9 +15,10 @@ calls createTweeterElement funnction for each object
 Use return value and appends it to the ".tweeter-container"
 */
 const renderTweets = function(tweets){
+  const container = $('.tweets-container').empty();
   for (let user_data of tweets){
     const $tweet = createTweetElement(user_data);
-    $('.tweets-container').prepend($tweet);
+    container.prepend($tweet);
   }
 }
 
@@ -56,11 +57,23 @@ const createTweetElement = function(tweet){
 const onSubmit = function(event){
   event.preventDefault();
   const data = $(this).serialize();
-  $.ajax({
-    url : "/tweets",
-    type: 'POST',
-    data
-  })
+  /**
+   * Checking the length of the form before submitting
+   */
+  const target = $(this).parent().find('#tweet-text').val().length;
+  if (target > 140){
+    alert("That's too many words!!")
+  }else if (target <= 0) {
+    alert("Don't be shy\n Please write something")
+  }else {
+    $.ajax({
+      url : "/tweets",
+      type: 'POST',
+      data
+    })
+    $(this).trigger("reset");
+    loadTweets();
+  }
 }
 /**
  * path : localhost:8080/tweets
