@@ -40,9 +40,9 @@ main{
   margin: 1.5em auto;
 }
 .tweets-container header{
-  margin-top: 80px;
-  margin-left: 6px;
-  margin-right: 6px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   border: none;
   border-bottom: 4px solid #524e4e;
 }
@@ -53,4 +53,9 @@ main{
   margin-left: 24px;
   margin-right: 24px;
   font-size: 16px;
+}
+.tweets-container header section {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
 }
