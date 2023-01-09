@@ -1,29 +1,38 @@
-.submit-counter {
+.container .submit-counter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'Bungee', cursive;
 
 }
-form {
-  width: 900px;
+.container form {
+  width: 60em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:rgb(249, 248, 248)
 }
-button {
+.container button {
   display: flex;
   justify-content: space-between;
   background-color: #008CBA;
-  border: 3px solid #545149;
+  border: 3px solid #121212;
   color: white;
   margin: 4px 2px;
   padding: 10px 25px;
 }
-textarea{
+.container textarea{
   background-color: #f2f3fa;
   font-weight: bold;
   height: 48px;
   width: 100%;
   margin-top: 20px;
   border: none;
-  border-bottom: 4px solid #999999;
+  border-bottom: 4px solid #0f0e0e;
+}
+.container #error{
+  border: 3px solid #060606;
+  background-color: rgb(196, 49, 5);
+  color : rgb(249, 248, 248);
+  font: 36px;
 }
 
