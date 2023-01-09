@@ -28,6 +28,12 @@ creates html template literal to be added in the "".tweets-container"
 */
 
 const createTweetElement = function(tweet){
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+  
   return $(`<article class="tweet">
   <header>
   <section>
@@ -38,7 +44,7 @@ const createTweetElement = function(tweet){
     
     <p> ${tweet.user.handle}</p>
   </section>
-  <p>${tweet.content.text}</p>
+  <p>${escape(tweet.content.text)}</p>
   </header>
   <footer>
     <p>${timeago.format(tweet.created_at)}</p>
