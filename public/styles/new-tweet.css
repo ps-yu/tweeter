@@ -9,7 +9,7 @@
   width: 60em;
   margin-top: 10px;
   margin-bottom: 10px;
-  color:rgb(249, 248, 248)
+  color:rgb(99, 97, 97)
 }
 .container button {
   display: flex;
@@ -21,9 +21,8 @@
   padding: 10px 25px;
 }
 .container textarea{
-  background-color: #f2f3fa;
-  font-weight: bold;
-  height: 48px;
+  background-color: #08c9f991;
+  height: 60px;
   width: 100%;
   margin-top: 20px;
   border: none;
