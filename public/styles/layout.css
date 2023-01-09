@@ -15,8 +15,8 @@ html {
  */
 
 body {
-  color: #f1efe9;
-  background-color: #005446;
+  color: #6d6c6a;
+  background-color: #08c9f991;
   background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
@@ -36,7 +36,7 @@ main{
 
 .tweets-container .tweet{
   border: 3px solid #131313;
-  color: #f8f0f0;
+  color: #323030;
   margin-top : 50px ;
   margin: 1.5em auto;
   transition: all 300ms ease-in-out;
@@ -69,5 +69,12 @@ Add the hover effect
 .tweets-container .tweet header section {
   display: flex;
   justify-content: space-between;
-  color: rgb(237, 234, 234);
+  color: rgb(65, 63, 63);
+}
+
+.fa-flag:hover,
+.fa-retweet:hover,
+.fa-heart:hover {
+  align-items: center;
+  color: #eeece8;
 }
