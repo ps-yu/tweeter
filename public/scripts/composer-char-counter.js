@@ -10,7 +10,7 @@ $(document).ready(() => {
     if ($(this).val().length > 140){
       target.css ({'color' : '#f7490f'});
     } else {
-      target.css({'color': '#545149'})
+      target.css({'color': '#f2f3fa'})
     }
 })
 });
