@@ -5,9 +5,9 @@
  */
 
 $(document).ready(() => {
+  $("#error").hide();
   $('form').on('submit', onSubmit);
   loadTweets();
-
 });
 /*
 @parmater = Array of objects containing user information
@@ -24,9 +24,12 @@ const renderTweets = function(tweets){
 
 /*
 @parameter {object}: data that contains tweet information
-creates html template literal to be added in the "".tweets-container"
+return html template literal to be added in the "".tweets-container"
 */
 
+/*
+ * preventing XSS  
+ */
 const createTweetElement = function(tweet){
   const escape = function (str) {
     let div = document.createElement("div");
@@ -63,28 +66,37 @@ const createTweetElement = function(tweet){
 const onSubmit = function(event){
   event.preventDefault();
   const data = $(this).serialize();
+  $("#error").slideUp();
+
   /**
    * Checking the length of the form before submitting
    */
   const target = $(this).parent().find('#tweet-text').val().length;
   if (target > 140){
-    alert("That's too many words!!")
-  }else if (target <= 0) {
-    alert("Don't be shy\n Please write something")
-  }else {
+    $("#error").slideDown(function(){
+      $("#error-msg").text("That's too many words!!")
+    })
+  } else if (target <= 0) {
+    $("#error").slideDown(function(){
+      $("#error-msg").text("Don't be shy! Please Write Something")
+    })
+  } else {
     $.ajax({
       url : "/tweets",
       type: 'POST',
       data
     })
+    .then(loadTweets);
     $(this).trigger("reset");
-    loadTweets();
+    $(this).parent().find(".counter").text(140);
   }
 }
+
 /**
  * path : localhost:8080/tweets
  * load more tweets to be used by the createTweetElement
  */
+
 const loadTweets = function(){
   $.ajax('/tweets', {method: 'GET'})
     .then(data => {
