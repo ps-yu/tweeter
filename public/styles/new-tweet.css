@@ -6,7 +6,7 @@
 
 }
 .container form {
-  width: 60em;
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
   color:rgb(99, 97, 97)
@@ -35,3 +35,8 @@
   font: 36px;
 }
 
+@media only screen and (min-width: 1024px){
+  .container textarea{
+    margin-top : 100px;
+  }
+}

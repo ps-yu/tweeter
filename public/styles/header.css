@@ -12,3 +12,13 @@
   color: aliceblue;
   font-size: 1.5em;
 }
+
+@media only screen and (min-width : 1024px) {
+  .header{
+    width: 800px;
+    align-self: unset;
+    margin-top: 160px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
