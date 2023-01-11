@@ -17,5 +17,4 @@ This repository is the starter code for the project: Students will fork and clon
 - Express
 - Node 5.10.x or above
 ##Screenshots
-!["Screenshot of tweet compse box"] (https://github.com/ps-yu/tweeter/blob/master/docs/App_Function.mp4)
 !["Screenshot of tweets] (https://github.com/ps-yu/tweeter/blob/master/docs/Screenshot.png?raw=true)
