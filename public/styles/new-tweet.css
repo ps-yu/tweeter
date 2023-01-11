@@ -34,9 +34,3 @@
   color : rgb(249, 248, 248);
   font: 36px;
 }
-
-@media only screen and (min-width: 1024px){
-  .container textarea{
-    margin-top : 200px;
-  }
-}
