@@ -1,8 +1,10 @@
 # Tweeter Project
+Tweeter is a simple, single-page Twitter clone. A user can post a tweet of 140 characters. Posts created by the users are sequential and the latest posts appear at the top of the page. The project is built upon using HTML, CSS, javascript, jquerry and AJAX.
 
-Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+## Screenshots
+
+!["Screenshot of tweets"](https://github.com/ps-yu/tweeter/blob/master/docs/Screenshot.png?raw=true)
 
 ## Getting Started
 
@@ -16,7 +18,3 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
-
-## Screenshots
-
-!["Screenshot of tweets"](https://github.com/ps-yu/tweeter/blob/master/docs/Screenshot.png?raw=true)
