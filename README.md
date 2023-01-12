@@ -20,4 +20,3 @@ This repository is the starter code for the project: Students will fork and clon
 ## Screenshots
 
 !["Screenshot of tweets"](https://github.com/ps-yu/tweeter/blob/master/docs/Screenshot.png?raw=true)
-!["Preview of App"](https://github.com/ps-yu/tweeter/blob/master/docs/App_Function.mp4)
